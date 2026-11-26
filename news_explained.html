@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Explained | Technology Made Simple</title>
 </head>
-<body>
-    <header>
 
+<body>
+    <header id="top">
+        <a href="index.html">
+            <img src="assets/images/tm-icon.png" alt="Technology Made Simple home logo">
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="news_explained.html" aria-current="page">News Explained</a>
+            <a href="helpful_tools.html">Helpful Tools</a>
+        </nav>
     </header>
     
     <main>
@@ -103,8 +113,40 @@
 
     </main>
 
-    <footer>
+    <footer class="site_footer" id="page-footer">
 
+        <p class="footer_tagline">Clear explanations for a changing world.</p>
+
+        <section class="newsletter" id="newsletter">
+            <h2>A clearer take on technology, once a week.</h2>
+            <h3>© 2026 Technology Made Simple. Created by AJ Jex for WDD 130.</h3>
+            <p>Educational class project. Editorial images are AI-generated. Product names belong to their respective owners.</p>
+
+            <form id="newsletter_form">
+                <label for="newsletter_email">Email address</label>
+
+                <input
+                    type="email"
+                    id="newsletter_email"
+                    name="email"
+                    placeholder="your_email@email.com"
+                    required>
+
+                <button type="submit">Try newsletter signup</button>
+
+                <p id="newsletter_message" aria-live="polite">Class demo. No email stored.</p>
+            </form>
+        </section>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="news_explained.html" aria-current="page">News Explained</a>
+            <a href="helpful_tools.html">Helpful Tools</a>
+        </nav>
+
+        <a href="#top">Back to top</a>
     </footer>
+
 </body>
+
 </html>
